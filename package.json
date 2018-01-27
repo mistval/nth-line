@@ -1,5 +1,5 @@
 {
-  "name": "nth-line",
+  "name": "read-nth-line",
   "version": "1.0.0",
   "description": "Get the nth line from a file, without the overhead of reading the rest of the file.",
   "main": "index.js",
@@ -25,5 +25,5 @@
   "bugs": {
     "url": "https://github.com/mistval/monochrome/issues"
   },
-  "homepage": "https://github.com/mistval/nth-line#readme",
+  "homepage": "https://github.com/mistval/nth-line#readme"
 }

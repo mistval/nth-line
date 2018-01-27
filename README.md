@@ -1,4 +1,4 @@
-# nth-line
+# read-nth-line
 
 Read the nth line of a file efficiently, without reading the rest of the file. Your system must have sed available.
 
@@ -6,7 +6,7 @@ Read the nth line of a file efficiently, without reading the rest of the file. Y
 
 **Asynchronous**
 ```js
-const nthLine = require('nth-line');
+const nthLine = require('read-nth-line');
 
 nthLine.read(__dirname + '/notes.txt', 150).then(result => {
   console.log(result);
@@ -17,7 +17,7 @@ nthLine.read(__dirname + '/notes.txt', 150).then(result => {
 
 **Synchronous**
 ```js
-const nthLine = require('nth-line');
+const nthLine = require('read-nth-line');
 
 try {
   console.log(nthLine.readSync(__dirname + '/notes.txt', 150));
