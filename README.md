@@ -30,4 +30,4 @@ The first line in your file is line 0, and if you don't pass in an absolute path
 
 ## Discussion
 
-This is just a wrapper around invoking sed in a shell. Newlines (\r\n and \n) are stripped from the end of the result. Errors thrown contain the the error message from sed.
+This is just a wrapper around invoking sed in a shell. Newlines (\r\n and \n) are stripped from the end of the result. Errors thrown contain the error message from sed.
