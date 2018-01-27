@@ -17,7 +17,7 @@ nthLine.read(__dirname + '/notes.txt', 150).then(result => {
 
 **Synchronous**
 ```js
-let nthLine = require('nth-line');
+const nthLine = require('nth-line');
 
 try {
   console.log(nthLine.readSync(__dirname + '/notes.txt', 150));
