@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mistval/nth-line.git"
+  },
   "keywords": [
     "nth",
     "line",
@@ -17,5 +21,9 @@
     "readline"
   ],
   "author": "Randall Schmidt",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mistval/monochrome/issues"
+  },
+  "homepage": "https://github.com/mistval/nth-line#readme",
 }
