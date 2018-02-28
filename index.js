@@ -7,10 +7,10 @@ function createShellCommand(filePath, lineNumber) {
 function stringifyResult(result) {
   let resultString = result.toString();
   if (resultString.endsWith('\n')) {
-    resultString = resultString.substring(0, resultString.length - 2);
+    resultString = resultString.substring(0, resultString.length - 1);
   }
   if (resultString.endsWith('\r')) {
-    resultString = resultString.substring(0, resultString.length - 2);
+    resultString = resultString.substring(0, resultString.length - 1);
   }
   return resultString;
 }
