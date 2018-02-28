@@ -1,6 +1,6 @@
 {
   "name": "read-nth-line",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get the nth line from a file, without the overhead of reading the rest of the file.",
   "main": "index.js",
   "scripts": {
