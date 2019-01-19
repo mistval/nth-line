@@ -1,7 +1,7 @@
 {
   "name": "read-nth-line",
-  "version": "1.0.2",
-  "description": "Get the nth line from a file, without the overhead of reading the rest of the file.",
+  "version": "1.0.3",
+  "description": "Get the nth line from a file using sed.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
