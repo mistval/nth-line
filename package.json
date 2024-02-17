@@ -1,6 +1,6 @@
 {
   "name": "read-nth-line",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Get the nth line from a file using sed.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "sed",
     "readline"
   ],
-  "author": "Randall Schmidt",
+  "author": "mistval",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mistval/monochrome/issues"

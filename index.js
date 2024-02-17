@@ -1,13 +1,13 @@
 const child_process = require('child_process');
 
-function createShellCommand(filePath, lineNumber) {
-  return `sed '${lineNumber + 1}q;d' ${filePath}`;
+function createExecFileArgs(filePath, lineNumber) {
+  return ['sed', [`${lineNumber + 1}q;d`, filePath]];
 }
 
 function readAsync(filePath, lineNumber) {
   return new Promise(function(resolve, reject) {
-    const shellCommand = createShellCommand(filePath, lineNumber);
-    child_process.exec(shellCommand, function(err, result) {
+    const execFileArgs = createExecFileArgs(filePath, lineNumber);
+    child_process.execFile(...execFileArgs, function(err, result) {
       if (err) {
         reject(err);
       }
@@ -17,8 +17,8 @@ function readAsync(filePath, lineNumber) {
 }
 
 function readSync(filePath, lineNumber) {
-  const shellCommand = createShellCommand(filePath, lineNumber);
-  const result = child_process.execSync(shellCommand);
+  const execFileArgs = createExecFileArgs(filePath, lineNumber);
+  const result = child_process.execFileSync(...execFileArgs);
   return result.toString();
 }
 
